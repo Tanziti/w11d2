@@ -7,11 +7,22 @@ import ThemeProvider from './context/ThemeContext';
 
 function Root() {
   return (
-      <ThemeProvider>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-      </ThemeProvider>
+    // <ThemeContext.Provider
+    //   value={{
+    //     themeName,
+    //     setThemeName
+    //   }}
+    // >
+    //   <BrowserRouter>
+    //     <App />
+    //   </BrowserRouter>
+    // </ThemeContext.Provider>
+
+    <ThemeProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
